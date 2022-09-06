@@ -7,6 +7,8 @@
 |---|---|---|
 |id||null: false|
 |content|text|null: false|
+* accumulate daily
+* source of self
 
 #### experiential_memories
 |Column|Type|Option|
@@ -20,6 +22,7 @@
 |satisfaction_level|||
 |occurrence_frequency|||
 |use_frequency|||
+* source of self
 
 ### [Problem classification]
 
@@ -30,6 +33,7 @@
 |problem_solving_score_rate|||
 |important_level|||
 |emergency_level|||
+* source of self
 
 #### problem_elements
 |Column|Type|Option|
@@ -48,6 +52,8 @@
 |experiential_memory_id|||
 |action_layer_ids||only layer == 3|
 |priority|||
+* Ideas, actions, emotional expressions, etc.
+* problems table : resolution_actions table = 1 : many
 
 #### action_layers
 |Column|Type|Option|
@@ -64,10 +70,11 @@
 |id|||
 |problem_id|||
 |next_resolution_action_id|||
-|status|||
+|status||Not started, started, interrupted, etc.|
 |working_times|||
+* problems table : progresses table = 1 : many
 
-#### problem_element_value
+#### problem_element_values
 |Column|Type|Option|
 |---|---|---|
 |id|||
@@ -77,6 +84,8 @@
 |experiential_memory_id|||
 |problem_category_id|||
 |value|||
+* problems table : problem_element_values = 1 : many
+* problem_elements : problem_element_value = 1 : many
 
 #### problems
 |Column|Type|Option|
@@ -87,6 +96,7 @@
 |experiential_memory_id|||
 |important_level|||
 |emergency_level|||
+* If the progress is completed, move to the experiential_memories table and delete it from the problems table
 
 ### [Problem solving result]
 
@@ -97,6 +107,8 @@
 |reward_category_id|||
 |phase|||
 |name|||
+* phase 1 is living expenses, expenses, hobbies, savings, etc.
+* phase 2 of living expenses is Clothing, food, housing, etc.
 
 #### reward_rates
 |Column|Type|Option|
@@ -104,6 +116,7 @@
 |id|||
 |reward_category_id|||
 |rate|||
+How will the reward be distributed?
 
 ### [Lifespan]
 
@@ -114,7 +127,7 @@
 |max|||
 |decrease_rate|||
 |name|||
-|name|||
+* age, external injury, crackup, etc.
 
 #### lifespans
 |Column|Type|Option|
