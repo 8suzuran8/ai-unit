@@ -1,6 +1,3 @@
-## TODO
-* How to manage the three greed rates?
-
 ## tables
 
 ### [Memory]
@@ -33,7 +30,9 @@
 |Column|Type|Option|
 |---|---|---|
 |id|||
-|problem_solving_score_rate|||
+|desire_for_life_rate|||
+|desire_for_descendants_prosperity_rate|||
+|desire_for_good_feel_rate|||
 |important_level|||
 |emergency_level|||
 * source of self
