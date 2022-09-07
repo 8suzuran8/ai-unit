@@ -1,3 +1,6 @@
+## TODO
+* Relation between experiential_memories table and reward_categories table
+
 ## tables
 
 ### [Memory]
