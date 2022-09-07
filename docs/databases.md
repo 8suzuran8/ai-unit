@@ -1,5 +1,5 @@
 ## TODO
-* Relation between experiential_memories table and reward_categories table
+* How to manage the three greed rates?
 
 ## tables
 
