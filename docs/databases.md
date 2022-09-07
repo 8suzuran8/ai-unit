@@ -106,17 +106,11 @@
 |id|||
 |reward_category_id|||
 |phase|||
+|rate|||
 |name|||
 * phase 1 is living expenses, expenses, hobbies, savings, etc.
 * phase 2 of living expenses is Clothing, food, housing, etc.
-
-#### reward_rates
-|Column|Type|Option|
-|---|---|---|
-|id|||
-|reward_category_id|||
-|rate|||
-How will the reward be distributed?
+* 'rate' is how will the reward be distributed?
 
 ### [Lifespan]
 
