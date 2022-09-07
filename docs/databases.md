@@ -52,7 +52,7 @@
 |id|||
 |problem_id|||
 |experiential_memory_id|||
-|action_layer_ids||only layer == 3|
+|action_layer_ids||only layer == 2|
 |priority|||
 * Ideas, actions, emotional expressions, etc.
 * problems table : resolution_actions table = 1 : many
@@ -61,7 +61,7 @@
 |Column|Type|Option|
 |---|---|---|
 |id|||
-|layer|integer|null: false|
+|layer|integer|0 or 1 or 2. null: false|
 |processes||if action_layer_id then layer >= my layer. if my layer == 0 then command and method is also good.|
 
 ### [Problem info]
