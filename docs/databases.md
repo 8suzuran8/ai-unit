@@ -14,10 +14,13 @@ problem_priority =
 
 ## neural network tables
 
+* The reason for dividing machine learning into multiple parts is to simplify one machine learning.
+
 #### newral_network_units
 |Column|Type|Option|
 |---|---|---|
 |id||null: false|
+|category_number|integer||
 |type|integer||
 |units|text||
 
@@ -69,6 +72,7 @@ problem_priority =
 |important_rate|||
 |emergency_rate|||
 |working_time_rate|||
+|newral_network_unit_category_number|||
 * source of self
 * Three Roots of Purpose for Human Action
 
