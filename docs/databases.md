@@ -1,6 +1,23 @@
+## Value calculation method
+
+desire_for_good_feel_level = working_times * working_time_rate + achievement_level * rate
+
+problem_solving_score =
+    desire_for_life_level * desire_for_life_rate +
+    desire_for_descendants_prosperity_level * desire_for_descendants_prosperity_rate +
+    desire_for_good_feel_level * desire_for_good_feel_rate
+
+problem_priority =
+    problem solving score +
+    important_level * important_rate +
+    emergency_level * emergency_rate
+
 ## tables
 
 ### [Memory]
+
+* In everyday life, passively or actively, a lot of experience or information gathering.
+* What kind of problem do you have, what do you do, and what results do you get?
 
 #### inexperienced_memories
 |Column|Type|Option|
@@ -16,8 +33,10 @@
 |id|||
 |inexperienced_memory_id|||
 |experiential_memory_id|||
+|problem_category_id|||
 |original_content|text|null: false|
 |problem_content|text|null: true|
+|problem_solving_score_level|||
 |achievement_level|||
 |satisfaction_level|||
 |occurrence_frequency|||
@@ -33,9 +52,11 @@
 |desire_for_life_rate|||
 |desire_for_descendants_prosperity_rate|||
 |desire_for_good_feel_rate|||
-|important_level|||
-|emergency_level|||
+|important_rate|||
+|emergency_rate|||
+|working_time_rate|||
 * source of self
+* Three Roots of Purpose for Human Action
 
 #### problem_elements
 |Column|Type|Option|
@@ -45,6 +66,14 @@
 |problem_element_rules|||
 
 ### [Action]
+
+* layer 0 corresponds to, for example, "How much current does the brain send to which muscle?"
+* layer 1 corresponds to "walk" or "hold".
+* layer 2 corresponds to "shopping" or "cooking".
+* layer 0 is a collection of commands and methods.
+* layer 1 is a collection of layer 0 and 1.
+* layer 2 is a collection of layer 0, 1 and 2.
+* The resolution_actions table is a collection of layer 2.
 
 #### resolution_actions
 |Column|Type|Option|
@@ -90,6 +119,11 @@
 * problem_elements : problem_element_value = 1 : many
 
 #### problems
+
+* Actions have a purpose. There are also obstacles that threaten the purpose. We treat them as "problems", search and select solutions from the accumulated information, and execute them.
+Problems are direct ones such as charging and maintenance, and indirect ones such as labor and socializing.
+Also, there may be a problem that "there is no solution in Memories".
+
 |Column|Type|Option|
 |---|---|---|
 |id|||
@@ -115,6 +149,8 @@
 * 'rate' is how will the reward be distributed?
 
 ### [Lifespan]
+
+* Lifespan fluctuates depending on the value calculated using the information in the reward_categories table for the problem solving result
 
 #### lifespan_categories
 |Column|Type|Option|
