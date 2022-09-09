@@ -120,10 +120,6 @@ problem_priority =
 
 #### problems
 
-* Actions have a purpose. There are also obstacles that threaten the purpose. We treat them as "problems", search and select solutions from the accumulated information, and execute them.
-Problems are direct ones such as charging and maintenance, and indirect ones such as labor and socializing.
-Also, there may be a problem that "there is no solution in Memories".
-
 |Column|Type|Option|
 |---|---|---|
 |id|||
@@ -133,6 +129,7 @@ Also, there may be a problem that "there is no solution in Memories".
 |important_level|||
 |emergency_level|||
 * If the progress is completed, move to the experiential_memories table and delete it from the problems table
+* Actions have a purpose. There are also obstacles that threaten the purpose. We treat them as "problems", search and select solutions from the accumulated information, and execute them.Problems are direct ones such as charging and maintenance, and indirect ones such as labor and socializing.Also, there may be a problem that "there is no solution in Memories".
 
 ### [Problem solving result]
 
