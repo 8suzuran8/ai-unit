@@ -12,7 +12,21 @@ problem_priority =
     important_level * important_rate +
     emergency_level * emergency_rate
 
-## tables
+## neural network tables
+
+#### newral_network_units
+|Column|Type|Option|
+|---|---|---|
+|id||null: false|
+|type|integer||
+|units|text||
+
+* type see artificial_intelligence_uses.md
+* type 1 is step1, type2 is step2
+* units is multidimensional array of weight and bias
+
+
+## other tables
 
 ### [Memory]
 
