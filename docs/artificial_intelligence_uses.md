@@ -1,3 +1,7 @@
+### @todo
+* How to calculate whether or not to be a projection neuron.
+* Destination selection method for projection neurons.
+
 ### problems
 * input: problems.problem_content
 * output: @todo001
