@@ -26,7 +26,7 @@ problem_priority =
 
 * type see artificial_intelligence_uses.md
 * type 1 is step1, type2 is step2
-* units is multidimensional array of weight and bias
+* units is multidimensional array of weight, bias and (destination of projection neurons or null)
 
 
 ## other tables
