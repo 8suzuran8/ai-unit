@@ -14,7 +14,7 @@ problem_priority =
 
 ## neural network tables
 
-* The reason for dividing machine learning into multiple parts is to simplify one machine learning.
+* The reason for dividing machine learning into multiple parts is to simplify one machine learning.This achieves about images are processed in the right brain and text is processed in the left brain etc.
 
 #### newral_network_units
 |Column|Type|Option|
